@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    max-width: 100%;
+    height: auto;
+    padding: 10px 16px;
+    background: transparent;
+    
+  }
+  
+  .content {
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .sticky > .header {
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content~.sticky {
+    margin-top: 102px;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+  }
+  .content {
+    padding: 0;
+  }
+  .sticky {
+    position: static;
+  }
+  .sticky + .content {
+    padding-top: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
